@@ -1,0 +1,86 @@
+.App {
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  height: 60px;
+  margin-right: 30px;
+}
+
+.category{
+  color: white;
+  margin-right: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: .3s ease-in;
+  cursor: pointer;
+}
+.category:hover{
+  color: black;
+}
+
+.img {
+  width: 1200px;
+  height: 300px;
+}
+
+.title {
+  text-align: center;
+  height: 100px;
+  width: 350px;
+  justify-content: space-evenly;
+}
+.title:hover .icon-cus{
+  background-color: #8bfe92;
+  color: #fff;
+}
+.title:hover .icon-cusone{
+  background-color: #75d4f9;
+  color: #fff;
+}
+.nameStore {
+  font-size: 20px;
+  color: #1c1c1c;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.subtitle {
+  font-size: 17px;
+}
+
+.icon-cus {
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: #8bfe92;
+  width: 50px;
+  border-style: solid;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8bfe92;
+  transition: .3s ease-in;
+}
+
+
+.icon-cusone {
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: #75d4f9;
+  width: 50px;
+  border-style: solid;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #75d4f9;
+  transition: .3s ease-in;
+}
+.blog{
+  font-size: 1em;
+  font-weight: 600;
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+}
