@@ -8,18 +8,21 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.news{
+
+.news {
     display: flex;
     width: 70%;
     flex-wrap: wrap;
     margin-left: 140px;
     height: 305px;
 }
-.newsImage{
+
+.newsImage {
     width: 275px;
     height: 153px;
 }
-.newsDiv{
+
+.newsDiv {
     margin-right: 20px;
     border-width: 1px;
     border-color: #e7e7e7;
@@ -29,17 +32,19 @@
     transition: 0.1s ease-in;
 }
 
-.newsDiv:hover{
+.newsDiv:hover {
     box-shadow: 0 5px 8px 0px #e3e3e3;
 }
-.titleNews{
-    width:240px;
+
+.titleNews {
+    width: 240px;
     text-align: start;
     margin-left: 20px;
     font-size: 1.15em;
     color: #1c1c1c;
     font-weight: 700;
 }
+
 .line {
     width: 100%;
     height: 1px;
@@ -48,12 +53,13 @@
     background-color: rgb(218, 218, 218);
 }
 
-.desNews{
+.desNews {
     width: 241px;
     color: #007bff;
     margin-left: 20px;
 }
-.newsDiv:hover .desNews{
+
+.newsDiv:hover .desNews {
     color: #64be43;
     cursor: pointer;
     transition: 0.1 ease-in;
@@ -69,7 +75,8 @@ input[type="text"] {
     border-radius: 4px;
     margin-right: 5px;
 }
-.input{
+
+.input {
     width: 200px;
     height: 27px;
 }
@@ -82,13 +89,15 @@ button {
     padding: 8px 12px;
     cursor: pointer;
 }
-.lineBlog{
+
+.lineBlog {
     width: 30px;
     height: 3px;
     bottom: 460px;
     background-color: rgb(218, 218, 218);
 }
-.imgCircle{
+
+.imgCircle {
     border-width: 1px;
     border-style: solid;
     border-radius: 30px;
@@ -98,26 +107,36 @@ button {
     margin-top: 18px;
     justify-content: center;
 }
-.test{
+
+.test {
     width: 140px;
     margin-left: 15px;
 }
-.test:hover{
+
+.test:hover {
     color: #64be43;
     cursor: pointer;
-    
+
 }
-.borderBlog{
+
+.borderBlog {
     margin-top: 20px;
     border-style: solid;
     width: 267px;
     border-width: 1px;
     border-color: #dddddd;
 }
-.lineCircle{
+
+.lineCircle {
     width: 190px;
     height: 0.5px;
     bottom: 460px;
     background-color: rgb(218, 218, 218);
     margin-left: 20px;
+}
+
+.logo {
+    width: 180px;
+    height: 60px;
+    margin-right: 30px;
 }
