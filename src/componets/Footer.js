@@ -15,10 +15,10 @@ export const Footer = () => {
             <div className='footer'>
                 <div style={{ width: 278 }}>
                     <img className='logo' src='http://mauweb.monamedia.net/birdshop/wp-content/uploads/2018/04/logo-robin.png' />
-                    <p><span>A</span>: 319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
-                    <p><span>T</span>: 0126 922 0162</p>
-                    <p><span>E</span>: demonhunter@gmail.com <br />mon@mona.media</p>
-                    <p><span>S</span>: demonhunterp</p>
+                    <p className='info'><span>T</span>: 319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                    <p className='info'><span>A</span>: 0126 922 0162</p>
+                    <p className='info'><span>E</span>: demonhunter@gmail.com <br />mon@mona.media</p>
+                    <p className='info'><span>S</span>: demonhunterp</p>
                 </div>
                 <div style={{ marginLeft: 30 }}>
                     <h3 style={{ marginTop: 0, marginLeft: 25 }}>BÀI VIẾT GẦN ĐÂY</h3>
