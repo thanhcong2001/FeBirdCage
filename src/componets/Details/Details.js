@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../Details/Details.css'
 import axios from 'axios'
+import TabForm from '../TabForm/TabForm'
 
 export const Details = ({ initialQuantity, onQuantityChange }) => {
     const [data, setdata] = useState([])
@@ -95,10 +96,11 @@ export const Details = ({ initialQuantity, onQuantityChange }) => {
                             <button style={{ backgroundColor: '#f1f1f1', color: 'black', height: 40, width: 32, borderRadius: 0, borderWidth: 1, borderStyle: 'solid', borderColor: '#dddddd' }} className='quatity' onClick={handleIncrease}>+</button>
                             <button style={{ height: 40, backgroundColor: '#8dc63f', marginLeft: 20, fontSize: 16, fontWeight: 'bold' }}>Thêm vào giỏ</button>
                         </div>
-                        <div className='horizontaline' style={{ width: 427,marginTop: 30,marginBottom:10 }}></div>
+                        <div className='horizontaline' style={{ width: 427, marginTop: 30, marginBottom: 10 }}></div>
                         <span style={{ color: '#353535' }}>Danh Mục:<a className='type'>Lồng Chim</a></span>
                     </div>
                 </div>
+                <TabForm />
                 {/* <div className='horizontaline' style={{ width: 885,marginTop: 40}}></div> */}
             </div>
         </div>
