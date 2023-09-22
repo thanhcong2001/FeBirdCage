@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import HealingIcon from '@mui/icons-material/Healing';
-import { AppBar, Box, Button, Grid, Toolbar, Typography } from '@mui/material';
+import {Box, Button, Grid,Typography } from '@mui/material';
 import { Stack } from '@mui/system';
 import FlutterDashIcon from '@mui/icons-material/FlutterDash';
 import '../Intro/Intro.css'
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
-import { makeStyles } from '@mui/styles';
 import axios from 'axios';
 export const Intro = () => {
     const [data, setdata] = useState([])
