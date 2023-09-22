@@ -3,6 +3,7 @@ import { Header } from '../Header/Header'
 import '../News/News.css'
 import axios from 'axios'
 import SearchIcon from '@mui/icons-material/Search';
+import NewsCard from './NewsCard.jsx';
 export const News = () => {
   const [data, setdata] = useState([])
   useEffect(() => {
@@ -19,20 +20,8 @@ export const News = () => {
         <p className='txt'>CATEGORY ARCHIVES: TIN TỨC</p>
       </div>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-        <div className='news'>
-          {
-            data.map(item => (
-              <div className='newsDiv' key={item?.id}>
-                <img className='newsImage' src={item?.img} />
-                <p className='titleNews'> {item.title}</p>
-                <div className='lineBlog' style={{marginLeft:20}}></div>
-                <p className='desNews'>{item.description}</p>
-                <div className='line'></div>
-              </div>
-            ))
-          }
-        </div>
-        <div style={{ width: '30%' }}>
+      <NewsCard/>
+        <div style={{ width: '30%', right: '20px' }}>
           <form className="search-bar">
             <input className='input'
               type="text"
