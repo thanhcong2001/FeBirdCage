@@ -6,6 +6,7 @@ import  {Routes, Route} from 'react-router-dom'
 import { Details } from './componets/Details/Details';
 import { Footer } from './componets/Footer/Footer';
 import HomePage from './componets/HomePage/HomePage';
+import { BirdCage } from './componets/BirdCage/BirdCage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path='/intro' element={<Intro/>}/>
       <Route path='/news' element={<News/>}/>
       <Route path='/details' element={<Details/>}/>
+      <Route path='/birdCage' element={<BirdCage/>}/>
       </Routes>
       <Footer/>
     </div>
