@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Header } from './Header'
-import { Footer } from './Footer'
-
-import '../News.css'
+import { Header } from '../Header/Header'
+import { Footer } from '../Footer/Footer'
+import '../News/News.css'
 import axios from 'axios'
 import SearchIcon from '@mui/icons-material/Search';
 export const News = () => {
@@ -60,7 +59,6 @@ export const News = () => {
           </div>
         </div>
       </div>
-      <Footer/>
     </div>
   )
 }

@@ -1,18 +1,20 @@
 import './App.css';
-import { Header } from './componets/Header';
-import { TodoList } from './componets/TodoList';
-import { News } from './componets/News';
+import { Header } from './componets/Header/Header';
+import { Intro } from './componets/Intro/Intro';
+import { News } from './componets/News/News';
 import  {Routes, Route} from 'react-router-dom'
-import { Details } from './componets/Details';
+import { Details } from './componets/Details/Details';
+import { Footer } from './componets/Footer/Footer';
 function App() {
   return (
     <div className='App'>
       <Header/>
       <Routes>
-      <Route path='/' element={<TodoList/>}/>
+      <Route path='/' element={<Intro/>}/>
       <Route path='/news' element={<News/>}/>
       <Route path='/details' element={<Details/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }

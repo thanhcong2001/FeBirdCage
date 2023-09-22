@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../Details.css'
+import '../Details/Details.css'
 import axios from 'axios'
 
 export const Details = ({ initialQuantity, onQuantityChange }) => {
@@ -41,7 +41,7 @@ export const Details = ({ initialQuantity, onQuantityChange }) => {
                                 <div style={{ justifyContent: 'space-around' }}>
                                     <span className='nameList'>{i.name}</span>
                                     <br />
-                                    <span className='priceProduct'>{i.price}đ</span>
+                                    <p className='priceProduct'>{i.price}đ</p>
                                 </div>
                             </div>
                             <div className='lineList'></div>
@@ -99,7 +99,7 @@ export const Details = ({ initialQuantity, onQuantityChange }) => {
                         <span style={{ color: '#353535' }}>Danh Mục:<a className='type'>Lồng Chim</a></span>
                     </div>
                 </div>
-                <div className='horizontaline' style={{ width: 885,marginTop: 40}}></div>
+                {/* <div className='horizontaline' style={{ width: 885,marginTop: 40}}></div> */}
             </div>
         </div>
     )

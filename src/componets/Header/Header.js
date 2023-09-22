@@ -3,6 +3,7 @@ import { AppBar, Box, Button, Grid, Toolbar, Typography } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
+import '../Header/Header.css'
 import { Link } from 'react-router-dom';
 export const Header = () => {
     return (
