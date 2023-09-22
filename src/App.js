@@ -5,12 +5,15 @@ import { News } from './componets/News/News';
 import  {Routes, Route} from 'react-router-dom'
 import { Details } from './componets/Details/Details';
 import { Footer } from './componets/Footer/Footer';
+import HomePage from './componets/HomePage/HomePage';
+
 function App() {
   return (
     <div className='App'>
       <Header/>
       <Routes>
-      <Route path='/' element={<Intro/>}/>
+      <Route path='/' element={<HomePage/>}/>
+      <Route path='/intro' element={<Intro/>}/>
       <Route path='/news' element={<News/>}/>
       <Route path='/details' element={<Details/>}/>
       </Routes>
