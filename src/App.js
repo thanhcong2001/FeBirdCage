@@ -7,6 +7,7 @@ import { Details } from './componets/Details/Details';
 import { Footer } from './componets/Footer/Footer';
 import HomePage from './componets/HomePage/HomePage';
 import { BirdCage } from './componets/BirdCage/BirdCage';
+import Cart from './componets/Cart/Cart.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/news' element={<News/>}/>
       <Route path='/details' element={<Details/>}/>
       <Route path='/birdCage' element={<BirdCage/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       </Routes>
       <Footer/>
     </div>
