@@ -67,7 +67,7 @@ function Cart(props) {
 
                                     </div>
                                     <input style={{ width: '97%', height: '30px', marginTop: '15px' }} type="text" placeholder="Mã ưu đãi" />
-                                    <button style={{ width: '100%', height: '60px', marginTop: '10px', fontSize: '20px' }}>Áp dụng mã ưu đãi</button>
+                                    <button className='btn-voucher' style={{ width: '100%', height: '60px', marginTop: '10px', fontSize: '20px' }}>Áp dụng mã ưu đãi</button>
                                 </div>
                             </div>
                         </div>
