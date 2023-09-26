@@ -3,6 +3,7 @@ import './Cart.css';
 import PropTypes from 'prop-types';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import DiscountIcon from '@mui/icons-material/Discount';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 Cart.propTypes = {
 
@@ -26,13 +27,13 @@ function Cart(props) {
                                 <tbody>
                                     <tr>
                                         <td className='product-img'>
-                                            {/* <HighlightOffIcon /> */}
+                                            <HighlightOffIcon/>
                                             <img className='img_cart' src="http://mauweb.monamedia.net/birdshop/wp-content/uploads/2018/04/06-7-300x300.jpg" alt="" />
                                         </td>
                                         <td>LỒNG TÀU TRÚC ĐEN</td>
-                                        <td>5,050,000 ₫</td>
+                                        <td className='money'>5,050,000 ₫</td>
                                         <td>2</td>
-                                        <td>10,100,000 ₫</td>
+                                        <td className='money'>10,100,000 ₫</td>
                                     </tr>
                                     <tr>
                                         <td><button className='bt-next'>TiẾP TỤC XEM SẢN PHẨM</button></td>
@@ -49,15 +50,15 @@ function Cart(props) {
                                     <h3>TỔNG SỐ LƯỢNG</h3>
                                     <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #d8d8d8' }}>
                                         <p>Tổng cộng</p>
-                                        <p>10,100,000</p>
+                                        <p className='money'>10,100,000</p>
                                     </div>
                                     <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #d8d8d8' }}>
-                                        <p>Giao hàng 1</p>
-                                        <p>10,100,000</p>
+                                        <p>Giao hàng</p>
+                                        <p>Giao hàng miễn phí</p>
                                     </div>
                                     <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '3px solid #d8d8d8' }}>
                                         <p>Tổng cộng</p>
-                                        <p>10,100,000</p>
+                                        <p className='money'>10,100,000</p>
                                     </div>
                                     <button className='bt-next' style={{ width: '100%', height: '60px', marginTop: '10px', fontSize: '20px' }}>TIẾN HÀNH THANH TOÁN</button>
                                 </div>

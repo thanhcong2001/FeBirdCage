@@ -1,7 +1,7 @@
 .cart-items {
     background: #f6f9fc;
     height: auto;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 
 .cart-items .cart-details {
@@ -68,10 +68,9 @@ product_name {
     font-size: 0.9em;
 }
 
-.cart-total{
+.cart-total {
     margin-right: 100px;
 }
-
 
 .table-total {
     width: 100%;
@@ -80,7 +79,7 @@ product_name {
     border-spacing: 0;
 }
 
-.btn-voucher{
+.btn-voucher {
     overflow: hidden;
     position: relative;
     background-color: #f9f9f9;
@@ -90,6 +89,10 @@ product_name {
     text-transform: none;
     font-weight: normal;
 }
-.btn-voucher:hover{
+.btn-voucher:hover {
     background-color: #c7c7c7;
+}
+
+.money {
+    font-weight: bold;
 }
