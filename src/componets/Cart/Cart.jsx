@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 import PropTypes from 'prop-types';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
@@ -9,7 +9,22 @@ Cart.propTypes = {
 
 };
 
-function Cart(props) {
+function Cart({ initialQuantity, onQuantityChange }) {
+
+    const [data, setdata] = useState([])
+    const [quantity, setQuantity] = useState(initialQuantity || 1);
+    const [list, setList] = useState([])
+
+    const handleIncrease = () => {
+        setQuantity(quantity + 1);
+    };
+
+    const handleDecrease = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
+
     return (
         <div>
             <>
@@ -27,12 +42,16 @@ function Cart(props) {
                                 <tbody>
                                     <tr>
                                         <td className='product-img'>
-                                            <HighlightOffIcon/>
+                                            <HighlightOffIcon />
                                             <img className='img_cart' src="http://mauweb.monamedia.net/birdshop/wp-content/uploads/2018/04/06-7-300x300.jpg" alt="" />
                                         </td>
                                         <td>LỒNG TÀU TRÚC ĐEN</td>
                                         <td className='money'>5,050,000 ₫</td>
-                                        <td>2</td>
+                                        <td>
+                                            <button style={{ backgroundColor: '#f1f1f1', color: 'black', height: 40, width: 30, borderRadius: 0, borderWidth: 1, borderStyle: 'solid', borderColor: '#dddddd' }} onClick={handleDecrease}>-</button>
+                                            <span style={{ paddingLeft: 18, paddingRight: 18, borderTopWidth: 1, borderStyle: 'solid', borderBottomWidth: 1, borderLeftWidth: 0, borderRightWidth: 0, paddingBottom: 12, paddingTop: 9, borderColor: '#dddddd' }}>{quantity}</span>
+                                            <button style={{ backgroundColor: '#f1f1f1', color: 'black', height: 40, width: 32, borderRadius: 0, borderWidth: 1, borderStyle: 'solid', borderColor: '#dddddd' }} className='quatity' onClick={handleIncrease}>+</button>
+                                        </td>
                                         <td className='money'>10,100,000 ₫</td>
                                     </tr>
                                     <tr>
