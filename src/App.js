@@ -8,6 +8,7 @@ import { Footer } from './componets/Footer/Footer';
 import HomePage from './componets/HomePage/HomePage';
 import { BirdCage } from './componets/BirdCage/BirdCage';
 import Cart from './componets/Cart/Cart.jsx';
+import Login from './componets/Login/LoginForm.jsx';
 
 function App() {
   return (

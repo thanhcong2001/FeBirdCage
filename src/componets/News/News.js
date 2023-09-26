@@ -14,9 +14,8 @@ export const News = () => {
   }, [])
 
   return (
-    <div>
-      <Header />
-      <div>
+    <div >
+      <div >
         <p className='txt'>CATEGORY ARCHIVES: TIN TỨC</p>
       </div>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
