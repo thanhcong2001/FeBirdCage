@@ -85,7 +85,7 @@ function LoginForm(props) {
                         <Grid container>
                             <Grid item xs>
                                 <Link href="#" variant="body2">
-                                    Forgot password?
+                                    Quên mật khẩu
                                 </Link>
                             </Grid>
                             <Grid item>

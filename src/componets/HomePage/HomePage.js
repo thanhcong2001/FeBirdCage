@@ -14,6 +14,10 @@ function HomePage() {
             <Banner />
             <h1 className="title_home">Lồng chim</h1>
             <div className="list"><CageList /></div>
+            <h1 className="title_home">Lồng chim</h1>
+            <div className="list"><CageList /></div>
+            <h1 className="title_home">Lồng chim</h1>
+            <div className="list"><CageList /></div>
             <h1 className="title_home">Thông tin hữu ích</h1>
             <div className="list"><Information /></div>
         </div>

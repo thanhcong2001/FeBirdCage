@@ -24,7 +24,7 @@ function Information(props) {
         <div>
             <div className='information'>
                 {
-                    data.map(item => (
+                    data.slice(0,4).map(item => (
                         <div className='newsDiv' key={item?.id}>
                             <img className='newsImage' src={item?.img} />
                             <p className='titleNews'> {item.title}</p>
