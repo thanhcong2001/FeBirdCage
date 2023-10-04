@@ -35,7 +35,7 @@ export const Intro = () => {
                                     <FlutterDashIcon />
                                 </div>
                                 <p className='nameStore'>{i.name}</p>
-                                <p>{i.title}</p>
+                                <p style={{lineHeight:1.5,textAlign:'center'}}>{i.title}</p>
                                 <Button variant='contained' style={{ alignContent: 'center', backgroundColor: '#64BE43', borderRadius: 20 }}>Click me</Button>
                             </div>
                         </Grid>
@@ -45,7 +45,7 @@ export const Intro = () => {
                                     <HealingIcon />
                                 </div>
                                 <p className='nameStore'>Mona Shop</p>
-                                <p>Dịch vụ chăm sóc  thú nuôi với tác phong chuyên nghiệp các bạn hoàn toàn có thể yên tâm khi giao vật nuôi của các bạn cho chúng tôi.Chúng tôi rất mong được phục vụ quý khách.</p>
+                                <p style={{lineHeight:1.8,textAlign:'center'}}>Dịch vụ chăm sóc  thú nuôi với tác phong chuyên nghiệp các bạn hoàn toàn có thể yên tâm khi giao vật nuôi của các bạn cho chúng tôi.Chúng tôi rất mong được phục vụ quý khách.</p>
                                 <Button variant='contained' style={{ alignContent: 'center', backgroundColor: '#64BE43', borderRadius: 20 }}>Click me</Button>
                             </div>
                         </Grid>
@@ -55,7 +55,7 @@ export const Intro = () => {
                                     <CloudQueueIcon />
                                 </div>
                                 <p className='nameStore'>Mona Shop</p>
-                                <p>Chuyên cung cấp các loại thức ăn cho vật nuôi đa dang phong phú.<br /><br />
+                                <p style={{lineHeight:1.5,textAlign:'center'}}>Chuyên cung cấp các loại thức ăn cho vật nuôi đa dang phong phú.<br /><br />
                                     Cung cấp phụ kiện,đồ chơi cho từng loài vật nuôi khác nhau.</p>
                                 <Button variant='contained' style={{ alignContent: 'center', backgroundColor: '#64BE43', borderRadius: 20 }}>Click me</Button>
                             </div>

@@ -1,8 +1,11 @@
 .card {
-    width:300px;
+    width:303px;
     border-style: dashed;
     border-width: 2px;
     border-color: #dddddd;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 447px;
 }
 
 .card h3,h4 {
@@ -11,4 +14,9 @@
 
 h4 {
     padding-bottom: 15px;
+}
+.nameCage{
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
 }

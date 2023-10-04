@@ -33,7 +33,7 @@ export const Details = ({ initialQuantity, onQuantityChange }) => {
                 <p className='listProduct'>SẢN PHẨM</p>
                 <div className='lineCircleOne'></div>
                 <div className='borderBlogOne'>
-                    {list.map(i => (
+                    {list.slice(0,5).map(i => (
                         <div>
                             <div className='blog'>
                                 <div>

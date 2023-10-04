@@ -44,8 +44,8 @@ export const News = () => {
           </form>
           <p className='blog'>BÀI VIẾT MỚI</p>
           <div className='lineBlog'></div>
-          <div className='borderBlog'>
-            {data.map(i => (
+          <div className='borderBlog' style={{height: 543}}>
+            {data.slice(0,5).map(i => (
               <div>
                 <div style={{ display: 'flex', marginLeft: 20 }} key={i?.id}>
                   <img className='imgCircle' src={i.img} />

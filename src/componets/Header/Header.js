@@ -7,7 +7,7 @@ import '../Header/Header.css'
 import { Link } from 'react-router-dom';
 export const Header = () => {
     return (
-        <div style={{ marginBottom: 120 }}>
+        <div style={{ marginBottom: 102}}>
             <AppBar style={{ backgroundColor: '#64BE43', height: 100, justifyContent: 'center', paddingLeft: 120 }}>
                 <Toolbar variant="dense" >
                     <Link style={{ textDecoration: 'none' }} to={'/'}><img className='logo' src='http://mauweb.monamedia.net/birdshop/wp-content/uploads/2018/04/logo-robin-white.png' /></Link>
