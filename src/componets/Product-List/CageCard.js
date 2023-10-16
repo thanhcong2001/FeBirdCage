@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import '../Product-List/Cage.css'
 import axios from 'axios';
+import { useEffect, useState } from 'react';
+import '../Product-List/Cage.css';
 
-const CageCard = () => {
+const CageCard = ({ product, onAddToCompare }) => {
 
     const [data, setdata] = useState([])
     useEffect(() => {
@@ -17,12 +17,12 @@ const CageCard = () => {
         <div>
             <div className="product">
                 {
-                    data.map(item => {
+                    data.map(product => {
                         return (
-                            <div className='card' key={item.id}>
-                                <img src={item.image} alt="" />
-                                <h3>{item.name}</h3>
-                                <h4>{item.price}</h4>
+                            <div className='card' key={product.id}>
+                                <img src={product.image} alt="" />
+                                <h3>{product.name}</h3>
+                                <h4>{product.price}</h4>
                             </div>
                         );
                     })
